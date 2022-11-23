@@ -1,0 +1,15 @@
+.main-products__carousel {
+    display: flex;
+    justify-content: center;
+    min-height: 150px;
+}
+
+.main-products__carousel .carousel__slide-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-products__carousel img {
+    max-width: 50%;
+    margin: auto;
+}
