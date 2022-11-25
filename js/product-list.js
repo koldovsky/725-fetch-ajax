@@ -1,8 +1,9 @@
 ( async () => {
 
+    let products;
     try {
         const response = await fetch('api/products.json');
-        const products = await response.json();
+        products = await response.json();
     } catch (error) {
         console.log('Cannot fetch products');
     }
