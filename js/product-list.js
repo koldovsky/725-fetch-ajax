@@ -1,7 +1,11 @@
 ( async () => {
 
-    const response = await fetch('api/products.json');
-    const products = await response.json();
+    try {
+        const response = await fetch('api/products.json');
+        const products = await response.json();
+    } catch (error) {
+        console.log('Cannot fetch products');
+    }
     let rate = 1;
     let currencies;
     renderProducts(products, rate);
